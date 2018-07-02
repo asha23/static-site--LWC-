@@ -1,0 +1,28 @@
+{
+  "name": "london-watch-competition",
+  "description": "Static site",
+  "main": "index.js",
+  "authors": [
+    "Ash Whiting (22PointSix)"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Static",
+    "site",
+    "watch",
+    "competition",
+    "rendered",
+    "html"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery.countdown": "^2.2.0"
+  }
+}

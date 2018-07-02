@@ -1,0 +1,182 @@
+/*!
+    Nav Bar
+*/
+
+.header {
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-top-color: #e7e7e7;
+    border-bottom-color: transparent;
+    margin-bottom: 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 0;
+}
+
+.navbar-nav {
+    text-align: center;
+    float: none;
+
+    li {
+        @include fs(14);
+        display: inline-block;
+        float: none;
+        background-color: transparent;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 14px;
+            left: 0;
+            background: black;
+            transform: scaleX(0);
+            transition: 0.25s ease;
+            z-index: 100;
+        }
+
+        &:hover {
+            opacity: 0.8;
+
+            &:before {
+                visibility: visible;
+                transform: scaleX(1);
+
+                @media (max-width:$screen-sm) {
+                    visibility:hidden;
+                }
+            }
+        }
+
+        @media(max-width: $screen-xs-max) {
+            display:block;
+        }
+
+        a {
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            background-color: transparent;
+            color: black!important;
+            position: relative;
+
+            &:focus,
+            &:active,
+            &:hover,
+            .active {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    background-color: transparent;
+}
+
+/*! Animated hamburger */
+
+.navbar-toggle {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    float: none;
+    text-align: center!important;
+    background: transparent;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:link {
+        background: transparent!important;
+    }
+
+    div {
+        transition: all 0.5s ease-in-out;
+        margin: auto auto;
+        margin-bottom: 5px;
+        height: 5px;
+        width: 30px;
+        background: black;
+        border-radius: 3px;
+    }
+
+    & div:nth-child(1).active {
+        transform: translateY(10px) rotate(45deg);
+        background: black;
+    }
+
+    & div:nth-child(2).active {
+        width: 0;
+        opacity: 0;
+    }
+
+    & div:nth-child(3).active {
+        transform: translateY(-10px) rotate(-45deg);
+        background: black;
+    }
+}
+
+/* Sticky nav */
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+
+    @media (min-width:$screen-xs-max) {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -182.9px;
+        z-index: 10000;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    
+    @media (max-width: 1200px) {
+        top:-163.19px;
+    }
+    
+    @media (max-width:$screen-sm-max) {
+        top: -112px;
+    }
+
+    @media (max-width:$screen-xs-max) {
+        position: static;
+        top: auto;
+    }
+}
+
+.sticky .navbar {
+    left: 0;
+}
+
+.header-logo-sticky {
+    position: absolute;
+    left: 20px;
+    top: 0;
+
+    img {
+        padding-top: 10px;
+        height: 40px;
+        width: auto;
+    }
+}
+
+.fadeout {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.fadein {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}

@@ -1,0 +1,99 @@
+.panel-group {
+   
+}
+
+.panel-default {
+    border:none;
+    box-shadow:none;
+    margin-top:10px!important;
+
+    .panel-heading {
+        background:$alt-green;
+        border-radius:10px;
+        transition:all 0.5s ease;
+        position:relative;
+        border:none;
+        padding:0!important;
+        transition:all 0.2s ease;
+
+        &.corners {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        &.no-corners {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .icon {
+            @include fs(22);
+            position:absolute;
+            right:20px;
+            top:0;
+            z-index:100;
+            position:absolute;
+            top:31%;
+            right:20px;
+            color:white;
+        }
+    
+        .panel-title {
+            @include fs(24);
+            color:white;
+            text-decoration:none;
+        }
+
+        a {
+            padding:20px;
+            cursor:pointer;
+            color:white;
+            text-decoration:none;
+            transition:all 0.5s ease;
+            display:block;
+            position:relative;
+            z-index:101;
+            
+            &:hover {
+                text-decoration:none;
+    
+                .panel-heading {
+                    opacity:0.8;
+    
+                    .panel-title {
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+
+    .panel-collapse {
+
+        .panel-body {
+            @include main_orange(0.1);
+            box-shadow:none;
+            border:none;
+            padding-top:30px;
+            padding-bottom:20px;
+            padding-left:20px;
+            padding-right:20px;
+            border-top-color:transparent;
+            border-top:none!important;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+   
+}
+
+.fa-plus,
+.fa-minus {
+    transition:all 0.5s ease;
+}
+
+
+
+
+
+

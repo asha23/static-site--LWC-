@@ -1,0 +1,285 @@
+.landing-body {
+    background:url('../images/landing/texture-bg.jpg') no-repeat center center;
+    background-size:cover;
+
+    .landing {
+        position:absolute;
+        height:100vh;
+        width:100%;
+        background:url('../images/landing/book-image.png') no-repeat top right;
+        background-size:auto 100%;
+        position:relative;
+        z-index:2;
+        display: flex;
+        align-items: left;
+        justify-content: left;
+
+        .details-container {
+            width:500px;
+            color:white;
+            align-self: flex-end;
+            margin:40px;
+
+            @media (max-height:768px) {
+                margin:20px;
+                align-self:flex-end;
+            }
+    
+            @media (max-width:$screen-xs-max) {
+                width:100%;
+                margin:0;
+                align-self:auto;
+            }
+            
+            .inner {
+                background:rgba(0,0,0,0.6);
+                padding:40px;
+                border-radius:10px;
+
+                @media (max-height:768px) {
+                    padding:20px;
+                }
+
+                @media (max-width:$screen-phone) {
+                    border-radius:0;
+                    height:100vh;
+                }
+    
+                .logo {
+                    text-align:center;
+    
+                    @media(max-height:768px) {
+                        img {
+                            width:50%;
+                            height:auto;
+                        }
+                    }
+
+                    @media (max-width:$screen-phone) {
+                        img {
+                            width:100%;
+                            height:auto;
+                        }
+                    }
+    
+                    figcaption {
+                        @include fs(24);
+                        font-weight:bold;
+                        padding-top:22px;
+
+                        @media(max-height:768px) {
+                            @include fs(20);
+                            padding-top:10px;
+                        }
+                    }
+                }
+    
+                .countdown-container {
+                    padding-top:50px;
+
+                    @media(max-height:768px) {
+                        padding-top:20px;
+                    }
+    
+                    #countdown {
+                        .counter-inner {
+                            text-align:center;
+                            .cont {
+                                display:inline-block;
+                                border:1px solid rgba(255,255,255,0.5);
+                                text-align:center;
+                                padding:15px;
+                                width:23%;
+                                margin-left:11px;
+
+                                @media(max-height:768px) {
+                                    padding:5px;
+                                    margin-left:6px;
+                                }
+    
+                                @media (max-width:$screen-xs-max) {
+                                    padding:5px;
+                                    margin-left:6px;
+                                }
+    
+                                &:first-child {
+                                    margin-left:0;
+                                }
+    
+                                .outer {
+                                    @include fs(34);
+
+                                    @media (max-height:768px) {
+                                        @include fs(24);
+                                    }
+                                }
+    
+                                .list {
+                                    padding-top:10px;
+
+                                    @media (max-height:768px) {
+                                        @include fs(9);
+                                    }
+    
+                                    @media (max-width:$screen-xs-max) {
+                                        @include fs(9);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .sign-up {
+                    @include fs(18);
+                    padding-top:30px;
+                    text-align:center;
+
+                    @media(max-height:768px) {
+                        padding-top:15px;
+                    }
+    
+                    .signup-form {
+                        padding-top:30px;
+
+                        @media(max-height:768px) {
+                            padding-top:15px;
+                        }
+    
+                        .landing-inputs {
+    
+                            input {
+                                padding:10px;
+                                width:100%;
+                                color:black;
+                            }
+    
+                            @media (max-width:$screen-phone) {
+                                width:100%;
+                                display:block;
+                            }
+    
+                            .input-group-btn {
+    
+                                @media (max-width:$screen-phone) {
+                                    width:100%;
+                                }
+    
+                                .btn {
+                                    @include fs(13);
+                                    background:black;
+                                    color:white!important;
+                                    font-weight:300;
+                                    padding:15px;
+                                    padding-left:40px;
+                                    padding-right:40px;
+                                    color:black;
+                                    border:none;
+                                    margin-left:10px;
+                                    border-radius:0;
+                                    border:1px solid #ccc;
+                                    background: -moz-linear-gradient(top, #e3e0dc 0%, #000000 100%);
+                                    background: -webkit-linear-gradient(top, #e3e0dc 0%,#000000 100%);
+                                    background: linear-gradient(to bottom, #e3e0dc 0%,#000000 100%);
+                                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3e0dc', endColorstr='#000000',GradientType=0 );
+                                    
+                                    @media (max-width:$screen-phone) {
+                                        width:100%;
+                                        display:block;
+                                        margin-left:0;
+                                        margin-top:10px;
+                                    }
+                                }
+    
+                                @media (max-width:$screen-phone) {
+                                    display:block;
+                                    
+                                }
+                            }
+                        }
+    
+                        .radio-group {
+                            padding-top:10px;
+                            padding-left:28px;
+    
+                            .radio {
+                                display:inline-block;
+                                margin-right:10px;
+                            }
+                            .radio-label {
+                                display:block;
+                                padding-left: 15px;
+                                text-indent: -28px;
+                                text-align:left;
+                                @include fs(12,16);
+                                font-family:'Open Sans', sans-serif;
+                                font-weight:300;
+                                padding: 0;
+                                margin:0;
+                                vertical-align: bottom;
+                                position: relative;
+                                top: -1px;
+                                *overflow: hidden;
+                            }
+                        }
+                    }
+                }
+    
+                .social {
+                    text-align:center;
+                    padding-top:20px;
+
+                    @media(max-height:768px) {
+                        padding-top:10px;
+                    }
+
+                    a {
+                        .social-icon { 
+                            color:white;
+                            i {
+                                color:white;
+                                transition:all 0.5s ease;
+                                opacity:1;
+                            }
+                            
+
+                            &:hover {
+                                i {
+                                    opacity:0.8;
+                                }
+                                
+                            }
+                        }
+                    }
+    
+                    .social-icon {
+                        @include fs(34);
+                        display:inline-block;
+                        margin-left:10px;
+                        padding:10px;
+                        border-radius:50%;
+                        border:1px solid white;
+                        width:60px;
+                        color:white!important;
+
+                        svg {
+                            color:white;
+                        }
+    
+                        &:first-child {
+                            margin-left:0;
+                        }
+
+                        @media (max-width:$screen-phone) {
+                            @include fs(24);
+                            width:50px;
+                        }
+
+                       
+                    }
+                }
+            }
+        }
+    }
+}
+

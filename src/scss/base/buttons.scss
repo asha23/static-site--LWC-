@@ -1,0 +1,154 @@
+/*!
+    Buttons
+*/
+
+.btn {
+    @include fs(18,18);
+    font-weight:700;
+    padding:20px;
+    border:5px solid white;
+    transition:all 0.5s ease;
+    overflow:hidden;
+
+    &:focus {
+        outline:0;
+        border:none;
+        box-shadow:none;
+    }
+
+    &.btn-enter {
+        border-radius:0;
+        position:relative;
+        border:1px solid #cccccc;
+        font-weight:300;
+        transition:all 0.3s ease;
+        padding-right:50px;
+        padding-left:50px;
+        overflow:hidden;
+        background:transparent;
+        z-index:1;
+
+        &:after {
+            content:"";
+            @include main_orange(0.7);
+            position:absolute;
+            transition:all 0.3s ease;
+            width:0%;
+            top:0;
+            height: 120%;
+            left: -30%;
+            transform: skewX(15deg);
+            z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+            cursor:pointer;
+            border:1px solid #333;
+            color:black;
+
+            &:after {
+                left: -30%;
+                width: 160%;
+            }
+        }
+    }
+
+    &.btn-teaser {
+        @include fs(14);
+        position:relative;
+        font-weight:300;
+        width:100%;
+        background:transparent;
+        text-align:center;
+        border:1px solid #cccccc;
+        border-radius:0;
+        padding:10px;
+        margin-top:20px;
+        text-transform:uppercase;
+        transition:all 0.5s ease;
+        overflow:hidden;
+        z-index:1;
+
+        &:after {
+            content:"";
+            @include main_orange(0.7);
+            position:absolute;
+            transition:all 0.3s ease;
+            width:0%;
+            top:0;
+            height: 120%;
+            left: -30%;
+            transform: skewX(15deg);
+            z-index: -1;
+        }
+
+        &:hover,
+        &:focus {
+            cursor:pointer;
+            border:1px solid #333;
+            color:black;
+
+            &:after {
+                left: -30%;
+                width: 160%;
+                flex-grow:3;
+            }
+        }
+    }
+}
+
+
+.enter-now-button {
+    margin-top:30px;
+}
+
+.btn:focus, 
+.btn.focus, 
+.btn:active:focus, 
+.btn:active.focus, 
+.btn.active:focus, 
+.btn.active.focus,
+.btn-form:focus, 
+.btn-form.focus, 
+.btn-form:active:focus, 
+.btn-form:active.focus, 
+.btn-form.active:focus, 
+.btn-form.active.focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.input-group-btn {
+    @include fs(14);
+}
+
+.btn-form {
+    height:40px;
+    width:40px;
+    border:none;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    border-left:2px solid transparent;
+
+    i {
+        color:black;
+        display:block;
+    }
+    color:black;
+
+}
+
+// Tooltip
+
+.tooltip > .tooltip-inner {
+    background-color: $main-orange; 
+    color: black; 
+    border: 1px solid $main-orange;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+ .tooltip-arrow {
+    border-top: 5px solid $main-orange!important;
+}

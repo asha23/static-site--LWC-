@@ -1,0 +1,21 @@
+//== Panels
+//
+//##
+
+$panel-bg:                    #fff !default;
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        0 !default;
+$panel-border-radius:         0 !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          transparent !default;
+$panel-footer-bg:             transparent !default;
+
+$panel-default-text:          black !default;
+$panel-default-border:        transparent !default;
+$panel-default-heading-bg:    $main-orange !default;
+
+$panel-primary-text:          #fff !default;
+$panel-primary-border:        transparent !default;
+$panel-primary-heading-bg:    $main-orange !default;

@@ -1,0 +1,128 @@
+/*! Forms */
+
+.form-outer {
+    @include greens(0.03);
+    padding-top:30px;
+    padding-bottom:30px;
+
+    a {
+        color:#666666;
+        opacity:1;
+        transition:all 0.3s ease;
+
+        &:hover,
+        &:focus {
+            opacity:0.8;
+        }
+    }
+
+    .row {
+        .form {
+            @include greens(0.05);
+            border-radius:10px;
+
+            .inner {
+                
+                border-radius:10px;
+                padding:40px 20px;
+
+                .submit {
+                    text-align:right;
+                    margin-top:20px;
+
+                    .btn-enter {
+                        background:rgba(255, 255, 255, 0.9);
+                    }
+                }
+
+                .forgot-password {
+                    @include fs(14);
+                }
+
+                .alert {
+                    color:red;
+                    @include fs(48);
+                    padding:0;
+                }
+
+                .success,
+                .error-header {
+                    @include fs(18,28);
+                    text-align:center;
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+}
+
+.form-intro {
+    @include fs(18,28)
+    text-align:center;
+    padding:20px;
+    padding-top:0;
+
+}
+
+.form-group,
+.input-group {
+
+    label { 
+        @include fs(18, 28);
+        font-weight:700;  
+        display:block;
+        font-family:'Rufina', serif;
+
+        &.error {
+            color:red;
+        }
+    }
+
+    input {
+        @include fs(18);
+        padding:20px;
+        padding-left:10px;
+        border:none;
+        box-shadow:none;
+
+        &.form-error {
+            background:$main-orange;
+            color:white;
+        }
+    }
+
+    select {
+        height:40px;
+        border:none;
+    }
+
+    .error-inline {
+        @include fs(14);
+        padding-top:8px;
+        color:red;
+        font-weight:bold;
+    }
+}
+
+.required {
+    @include fs(10);
+}
+
+.cost {
+    padding-top:34px;
+    @include fs(36);
+    font-weight:bold;
+
+    p {
+        padding-bottom:0;
+    }
+}
+
+// .datepicker {
+//     top:60px!important;
+// }
+
+.input-group-addon {
+    padding:0;
+    border:0;
+}

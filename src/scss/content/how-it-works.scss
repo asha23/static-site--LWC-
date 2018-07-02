@@ -1,0 +1,124 @@
+.how-it-works {
+
+    .row {
+        position:relative;
+        border-top:4px solid white;
+
+        .step-odd,
+        .step-even {
+            padding-top:60px;
+            padding-bottom:60px;
+        }
+
+        .step-odd {
+            background:#eaeaea;
+        }
+
+        .step-even {
+            background:#efefef;
+        }
+
+        .inner {
+
+            .steps {
+
+                .circle {
+                    @include make-xs-column(12);
+                    @include make-sm-column(3);
+                    text-align:left;
+
+                    @media (max-width:$screen-sm) {
+                        text-align:center;
+                        padding-top:30px;
+                    }
+
+                    .circle-inner {
+                        @include fs(120);
+                        display:inline-block;
+                        background:$main-orange;
+                        border-radius: 50%;
+                        text-align:center;
+                        font-weight:700;
+                        padding:50px;
+                        width:220px;
+                        height:220px;
+                        color:white;
+
+                        @media (max-width:$screen-sm-max) {
+                            @include fs(60);
+                            padding:30px;
+                            width:120px;
+                            height:120px;
+                        }
+                    }
+                }
+
+                .circle-text {
+                    @include make-xs-column(12);
+                    @include make-sm-column(9);
+                    @include fs(24,32);
+                    
+
+                    @media (max-width:$screen-sm) {
+                        @include fs(18,26);
+                        text-align:center;
+                    }
+
+                    .text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media (max-width:$screen-sm) {
+                            padding-top:30px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .arrow-down {
+            position:absolute;
+            text-align:center;
+            z-index:100;
+            left:0;
+            right:0;
+            margin-top:-34px;
+
+            @media (max-width:$screen-xs-max) {
+                margin-top:-23px;
+            }
+
+            .inner {
+                @include fs(60);
+                color:$main-green;
+                display:inline-block;
+                text-align:center;
+                width:70px;
+                height:70px;
+                background:white;
+                padding-top:6px;
+                border-radius:50%;
+
+                @media (max-width:$screen-xs-max) {
+                    @include fs(30);
+                    width:50px;
+                    height:50px;
+                    padding-top:11px;
+                }
+            }
+            
+        }
+    }
+}
+
+.faqs-accordion {
+    .row {
+        .inner {
+            .panel-group {
+                margin-top:60px;
+
+            }
+        }
+    }
+}

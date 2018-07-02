@@ -1,0 +1,42 @@
+/*!
+    Globals
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    @include fs(16, 22);
+}
+
+.img-respond {
+    text-align:center;
+    width:100%;
+    height:auto;
+}
+
+p {
+    font-family:'Rufina', serif;
+}
+
+// Checker for js
+
+.checker {
+    position:relative;
+}
+
+@media (max-width:$screen-xs-max) {
+    .checker {
+        position:static;
+    }
+}
+
+hr {
+    border-top: 1px dotted #999;
+}
+
+// main text headers
+
+.main-text {
+    @include make-md-column(10);
+    margin-top:60px;
+    text-align:center;
+}

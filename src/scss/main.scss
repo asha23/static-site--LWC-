@@ -1,0 +1,41 @@
+//@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'base/colors';
+
+@import 'bootstrap';
+@import 'variables';
+//@import '../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fontawesome';
+//@import '../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-solid';
+//@import '../../node_modules/@fortawesome/fontawesome-free-webfonts/scss/fa-regular';
+@import '../../node_modules/bootstrap-sass-datepicker/sass/datepicker';
+
+// Base styles
+
+
+@import 'base/mixins';
+@import 'base/globals';
+
+@import 'base/typography';
+@import 'base/buttons';
+@import 'base/forms';
+@import 'base/panel';
+
+// Blocks
+
+@import 'blocks/main-header';
+@import 'blocks/form-header';
+
+// Common styles
+
+@import 'common/header';
+@import 'common/navbar';
+@import 'common/footer';
+
+// Content styles
+
+@import 'content/index';
+@import 'content/view-prize';
+@import 'content/about';
+@import 'content/how-it-works';
+@import 'content/blog';
+@import 'content/blog-full';
+//@import 'content/landing';

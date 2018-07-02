@@ -1,0 +1,98 @@
+a {
+    color:black;
+}
+
+p {
+    @include fs(18, 26)
+}
+
+h1 {
+    font-weight:300;
+    @include fs(45, 50);
+}
+
+h2 {
+    font-weight:300;
+}
+
+.title {
+    text-align:center;
+    position:relative;
+    display:inline-block;
+    margin-bottom:30px;
+
+    &:before {
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height:2px;
+        background:white;
+    }
+
+    h2 {
+        @include fs(38);
+        color:white;
+        font-weight:300;
+        border:none;
+        margin:0;
+        padding-top:0;
+        padding-bottom:14px;
+    }
+
+    h1 {
+        @include fs(48);
+        color:white;
+        font-weight:300;
+        border:none;
+        margin:0;
+        padding-top:0;
+        padding-bottom:14px;
+    }
+}
+
+h3 {
+
+}
+
+h4 {
+    @include fs(22, 28);
+    font-weight:300;
+    
+}
+
+.teaser-header {
+    display:inline-block;
+    position:relative;
+    margin-bottom:20px;
+    margin-top:20px;
+
+    &:before {
+        content:"";
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0;
+        height:2px;
+        background:$main-orange;
+    }
+}
+
+.intro-header {
+    position:relative;
+    display:inline-block;
+    margin-bottom:30px;
+    text-align:center;
+
+    &:before {
+        content:"";
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        height:2px;
+        background:$main-orange;
+    }
+}
+

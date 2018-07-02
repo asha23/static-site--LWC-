@@ -1,0 +1,176 @@
+
+
+/*!
+    View Prize
+*/
+
+.view-prize {
+    .row {
+        .image-hero {
+            margin-bottom:80px;
+            position:relative;
+
+            .corner-ribbon {
+                position: absolute;
+                left: -5px; 
+                top: -5px;
+                z-index: 1;
+                overflow: hidden;
+                width: 75px; 
+                height: 75px;
+                text-align: right;
+
+                span {
+                    @include fs(10, 20);
+                    font-weight: bold;
+                    color: black;
+                    text-transform: uppercase;
+                    text-align: center;
+                    transform: rotate(-45deg);
+                    width: 100px;
+                    display: block;
+                    background: #79A70A;
+                    background: linear-gradient($main-orange 0%, $main-orange 100%);
+                    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+                    position: absolute;
+                    top: 19px; 
+                    left: -21px;
+
+                    &:before {
+                        content: "";
+                        position: absolute; 
+                        left: 0px; 
+                        top: 100%;
+                        z-index: -1;
+                        border-left: 3px solid #8F5408;
+                        border-right: 3px solid transparent;
+                        border-bottom: 3px solid transparent;
+                        border-top: 3px solid #8F5408;
+                    }
+
+                    &:after {
+                        content: "";
+                        position: absolute; 
+                        right: 0px; 
+                        top: 100%;
+                        z-index: -1;
+                        border-left: 3px solid transparent;
+                        border-right: 3px solid #8F5408;
+                        border-bottom: 3px solid transparent;
+                        border-top: 3px solid #8F5408;
+                    }
+                }
+            }
+        }
+
+        .info {
+
+            .inner {
+                text-align:center;
+            }
+
+            .info-inner {
+                @include make-md-column(6);
+                text-align:center;
+            }
+        }
+
+        .specs {
+            margin-top:80px;
+
+            header {
+                text-align:center;
+            }
+
+            .spec-column {
+                @include make-md-column(4);
+
+                h3 {
+                    @include fs(20,24);
+                    font-weight:300;
+                    padding-bottom:10px;
+                    border-bottom:1px solid #ccc;
+                    margin-bottom:40px;
+                }
+            }
+
+            .spec-inner {
+                text-align:left;
+
+                .spec-item {
+                    margin-bottom:30px;
+                    header {
+                        text-align:left;
+    
+                        h4 {
+                            @include fs(17,22);
+                        }
+                    }
+    
+                    p {
+                        @include fs(14, 18);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ribbon {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    position: absolute;
+
+    &:before,
+    &:after {
+        position: absolute;
+        z-index: 1;
+        content: '';
+        display: block;
+        border: 3px solid #8d650c;
+    }
+
+    span {
+        @include fs(18);
+        font-weight:700;
+        position: absolute;
+        color:black;
+        display: block;
+        width: 260px;
+        padding: 15px 0;
+        background-color: $main-orange;
+        box-shadow: 0 5px 10px rgba(0,0,0,.1);
+        text-transform: uppercase;
+        text-align: center;
+        
+        
+    }
+}
+  
+.ribbon-top-left {
+    top: -5px;
+    left: -4px;
+
+    &:before,
+    &:after {
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+
+    &:before {
+        top: -1px;
+        right: 1px;
+    }
+
+    &:after {
+        bottom: 1px;
+        left: -1px;
+    }
+
+    span {
+        left: -58px;
+        top: 48px;
+        transform: rotate(-45deg);
+    }
+}

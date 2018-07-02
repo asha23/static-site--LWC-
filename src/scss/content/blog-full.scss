@@ -1,0 +1,49 @@
+.blog-full-large-video {
+    margin-top:60px;
+}
+
+.blog-main {
+    .row {
+        .main-text {
+            text-align:left;
+
+            .image-inner {
+                padding-top:40px;
+                padding-bottom:40px;
+            }
+        }
+    }
+}
+
+.blog-nav {
+    margin-top:60px;
+    margin-bottom:60px;
+    padding-top:20px;
+    padding-bottom:20px;
+    border-top:1px solid #efefef;
+    border-bottom:1px solid #efefef;
+
+    .row {
+        .inner {
+            .blog-nav-item {
+                @include make-xs-column(6);
+                border-right:1px solid #efefef;
+
+                &.right {
+                    text-align:right;
+                    border-right:none;
+                }
+
+                a {
+                    transition:all 0.5s ease;
+                    opacity:1;
+
+                    &:hover {
+                        text-decoration:none;
+                        opacity:0.8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+
+/*!
+    Index page
+*/
+
+/*! Index hero */
+
+.index-hero {
+    position:relative;
+}
+
+/*! Intro text */
+
+.introductory-text {
+    .row {
+        .intro-text-block {
+            @include make-md-column(8);
+            background:white;
+            margin-top:-100px;
+
+            @media (max-width:$screen-sm-max) {
+                margin-top:0;
+            }
+            
+            .inner {
+                padding:30px;
+                text-align:center;
+            }
+        }
+    }
+}
+
+
+/*! Prize teasers */
+
+.prize-teasers {
+    margin-top:100px;
+    
+    .row {
+        .watch-teaser {
+            @include make-sm-column(6);
+            @include make-md-column(3);
+            margin-bottom:30px;
+
+            .inner {
+                position:relative;
+
+                .corner-ribbon {
+                    padding:20px;
+                    text-align:center;
+                    background:$main_orange;
+                    
+                    span {
+                        @include fs(16);
+                        text-transform:uppercase;
+                        font-weight:700;
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*! view collection */
+
+.view-collection {
+
+    margin-top:60px;
+    border-top:1px solid $main-orange;
+    .row {
+        .main-button {
+    
+            text-align:center;
+        }
+    }
+}

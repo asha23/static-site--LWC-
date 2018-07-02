@@ -1,0 +1,41 @@
+{{!-- layouts/base.hbs --}}
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>
+		{{#if title}}
+			{{title}}
+		{{else}}
+			Base Page Title
+		{{/if}}
+		</title>
+	
+		{{#> head-block}}
+		{{> includes/head }}
+		{{/head-block}}
+
+	</head>
+	
+	<body  class="checker">
+
+	{{#> header-block}}
+		{{> includes/header }}
+	{{/header-block}}
+
+
+	{{#> purchase-credits }}
+		{{> content/cont-purchase-credits }}
+	{{/purchase-credits}}
+
+  
+	{{#> footer-block}}
+		{{> includes/footer }}
+	{{/footer-block}}
+
+   
+	{{#> scripts-block}}
+		{{> includes/scripts }}
+	{{/scripts-block}}
+	</body>
+</html>

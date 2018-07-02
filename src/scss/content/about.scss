@@ -1,0 +1,28 @@
+.about-main {
+    .row {
+
+        .inner-brand-values {
+            margin-top:60px;
+
+            .brand-value {
+
+                @include make-sm-column(6);
+                @include make-md-column(3);
+
+                @media (max-width:$screen-xs-max) {
+                    margin-bottom:40px;
+                }
+
+                .inner {
+    
+                    text-align:center;
+    
+                }
+            }
+        }
+    }
+}
+
+.orange {
+    color:$main-orange;
+}

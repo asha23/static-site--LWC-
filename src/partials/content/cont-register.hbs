@@ -1,0 +1,245 @@
+<!-- Register form -->
+
+<section class="container-fluid form-header">
+    <header>
+        <h1>Register</h1>
+    </header>
+
+    <article class="container">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <p class="reveal">Please enter your details to register.</p>
+        </div>
+        <div class="col-md-2"></div>
+    </article>
+</section>
+
+<section class="container-fluid form-outer login-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 form">
+                
+                <div class="inner">
+
+                    <form >
+
+                        <div class="form-group">
+                            <label for="name"><span class="red">*</span> Name:</label>
+                            <input type="text" class="form-control" id="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><span class="red">*</span> Email address:</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="clearfix"><span class="red">*</span> Password:</label>
+                            <div class="input-group">
+                                
+                                <input type="password" class="form-control password" id="password" pass-show="false" required />
+                                <div class="input-group-btn show-password" data-toggle="tooltip" data-placement="top" title="Show passwords">
+                                    <button class="btn-form ">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <label for="repeat-password" class="clearfix"><span class="red">*</span> Repeat Password:</label>
+                            <input type="password" class="form-control password" id="repeat-password" pass-show="false" required />
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group">
+                            <label for="address-line-1"><span class="red">*</span> Address line 1:</label>
+                            <input type="text" class="form-control" id="address-line-1" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address-line-2"> Address line 2:</label>
+                            <input type="text" class="form-control" id="address-line-1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><span class="red">*</span> City:</label>
+                            <input type="text" class="form-control" id="city" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><span class="red">*</span> Post Code:</label>
+                            <input type="text" class="form-control" id="city" required/>
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group">
+                            <label for="telephone-number"><span class="red">*</span> Phone Number:</label>
+                            <input type="number" class="form-control" id="telephone-number" required/>
+                        </div>
+
+                        <div class="required">
+                            <span class="red">*</span> Required field
+                        </div>
+
+                        <div class="submit">
+                            <button type="submit" class="btn btn-enter">Register</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Register form ends -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<!-- Register form with errors -->
+
+<section class="container-fluid form-header">
+    <header>
+        <h1>Register</h1>
+    </header>
+
+    <div class="form-intro">
+        <p>Lorem ipsum dolor icit</p>
+    </div>
+</section>
+
+<section class="container-fluid form-outer login-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 form">
+                
+                <div class="inner">
+
+                    <div class="error-header">
+                        <p class="alert">
+                            <i class="fas fa-thumbs-down"></i>
+                        </p>
+                        <p>There has been a problem with your submission. Please correct the marked errors and submit again.</p>
+                    </div>
+                    
+                    <form >
+
+                        <div class="form-group">
+                            <label for="name" class="error"><span class="red">*</span> Name:</label>
+                            <input type="text" class="form-control form-error" id="name" required />
+                            <div class="error-inline"><i class="fas fa-exclamation-circle"></i> Error message</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><span class="red">*</span> Email address:</label>
+                            <input type="email" class="form-control" id="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="clearfix"><span class="red">*</span> Password:</label>
+                            <div class="input-group">
+                                
+                                <input type="password" class="form-control password" id="password" pass-show="false" required />
+                                <div class="input-group-btn show-password" data-toggle="tooltip" data-placement="top" title="Show Password">
+                                    <button class="btn-form ">
+                                        <i class="fas fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <label for="repeat-password" class="clearfix"><span class="red">*</span> Repeat Password:</label>
+                            <input type="password" class="form-control password" id="repeat-password" pass-show="false" required />
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group">
+                            <label for="address-line-1"><span class="red">*</span> Address line 1:</label>
+                            <input type="text" class="form-control" id="address-line-1" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="address-line-2"> Address line 2:</label>
+                            <input type="text" class="form-control" id="address-line-1" />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><span class="red">*</span> City:</label>
+                            <input type="text" class="form-control" id="city" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><span class="red">*</span> Post Code:</label>
+                            <input type="text" class="form-control" id="city" required/>
+                        </div>
+
+                        <hr>
+
+                        <div class="form-group">
+                            <label for="telephone-number"><span class="red">*</span> Phone Number:</label>
+                            <input type="number" class="form-control" id="telephone-number" required/>
+                        </div>
+
+                        <div class="required">
+                            <span class="red">*</span> Required field
+                        </div>
+
+                        <div class="submit">
+                            <button type="submit" class="btn btn-enter">Register</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Register form with errors ends -->
+
+<p>&nbsp;</p>
+
+<!-- Register form success -->
+
+<section class="container-fluid form-outer login-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6 form">
+                
+                <div class="inner">
+                 
+
+                        <div class="success">
+                            <p class="alert">
+                                <i class="fas fa-thumbs-up"></i>
+                            </p>
+                            <h3>Registration complete</h3>
+                            <p> We have received your details. Please check your email for confirmation.</p>
+                        </div>
+
+        
+                </div>
+            </div>
+
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Register form success ends -->

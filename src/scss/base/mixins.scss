@@ -1,0 +1,20 @@
+@mixin fs($size:1.6, $line: $size) {
+	font-size: ($size) + px;
+	line-height: ($line) + px;
+	font-size: ($size / 10) + rem;
+	line-height: ($line / 10)+ rem;
+}
+
+@mixin main_orange($opacity:1) {
+	background:#ffb612;
+	background:rgba(255, 182,18, $opacity)
+}
+
+@mixin grays($opacity:1) {
+	background:rgba(0,0,0,$opacity);
+}
+
+@mixin greens($opacity:1) {
+	background:rgba(1, 51, 33,$opacity);
+}
+
