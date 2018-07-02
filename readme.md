@@ -1,4 +1,4 @@
-# London Watch Competition
+# Static site
 
     npm install
 
